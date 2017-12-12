@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context="sharefare.aliraza.com.SignInActivity">
+
+    <EditText
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:phoneNumber="false" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:text="messag"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#008080"
+        android:text="@string/btnSignIn"
+        android:textColor="@android:color/background_light"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:gravity="end"
+        android:text="@string/forget_password"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

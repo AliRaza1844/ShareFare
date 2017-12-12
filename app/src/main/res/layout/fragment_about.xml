@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".About">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="About US"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="The “ShareFare” is an android and web application that helps people who travel in their private vehicles to share their vehicle and others will pay them. It’s an amazing way of sharing the travel and the fare among common people."
+            android:inputType="textMultiLine" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

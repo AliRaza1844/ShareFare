@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SHARE FARE</string>
+    <string name="btnSignup">Sign UP</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="title_activity_login_teacher">Sign in</string>
+    <string name="email_hint">Enter your Email</string>
+    <string name="email">Email</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_side_menu">SideMenu</string>
+
+    <string name="hint_id">please enter your id number</string>
+    <string name="submit_button">Submit</string>
+    <string name="welcome">Welcome to SHARE FARE</string>
+    <string name="sign_in">Sign in</string>
+    <string name="new_">New to Share Fare?</string>
+    <string name="already_member">Already have an account?</string>
+    <string name="sign_up">Sigh up</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="title_activity_student_side_bar_menu">StudentSideBarMenu</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_student_profile2">StudentProfile2</string>
+    <string name="title_activity_teacher_side_bar_menu">TeacherSideBarMenu</string>
+    <string name="hello_blank_fragment"></string>
+</resources>

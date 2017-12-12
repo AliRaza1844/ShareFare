@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btnaddjourney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp"
+            android:background="#008080"
+            android:text="Add Journey" />
+
+        <Button
+            android:id="@+id/btnsearchjourney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:background="#008080"
+            android:text="Search Journey" />
+
+        <Button
+            android:id="@+id/btnaddedjourney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:background="#008080"
+            android:text="Added Journey" />
+
+        <Button
+            android:id="@+id/btnbookjourney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:background="#008080"
+            android:text="Book Journey" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

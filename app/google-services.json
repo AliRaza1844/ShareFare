@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "177783427864",
+    "firebase_url": "https://sharefare-a7bfc.firebaseio.com",
+    "project_id": "sharefare-a7bfc",
+    "storage_bucket": "sharefare-a7bfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177783427864:android:5a238f0d4555dc3e",
+        "android_client_info": {
+          "package_name": "sharefare.aliraza.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177783427864-qan6oin33lvcvhhlihhlpi0flnotu986.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sharefare.aliraza.com",
+            "certificate_hash": "3ba29e8aff7f1dc94ff66459712a068e4cbd30f7"
+          }
+        },
+        {
+          "client_id": "177783427864-38mcud5vkisbudres15iv2p6irfrj6n4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ-wUZBEWhBTZKujqCGXIBTTx7JRw8TF8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177783427864-38mcud5vkisbudres15iv2p6irfrj6n4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

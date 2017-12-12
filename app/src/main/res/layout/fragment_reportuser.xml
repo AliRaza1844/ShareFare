@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportUser">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Report User"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="ENter User Name"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Enter Complaint"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="here user will enter the complaint against the other user in any case"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="#008080"
+        android:text="Send" />
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

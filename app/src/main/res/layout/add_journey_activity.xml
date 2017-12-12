@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context=".AddJourney">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Add Journey"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Search Journey"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center_horizontal"
+        android:text="Add Pin Location"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Pin Location"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Destination"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="TIme"
+            android:inputType="time" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="date" />
+
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Vehicle"
+            android:inputType="date" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Available Seats"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Expected Fare"
+            android:inputType="date" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="1dp"
+        android:background="#008080"
+        android:text="Add" />
+
+
+</LinearLayout>
