@@ -27,9 +27,9 @@
             android:id="@+id/btnVerifyPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="75dp"
-            android:layout_marginRight="75dp"
-            android:text="Verify" />
+            android:layout_marginLeft="140dp"
+            android:onClick="sendCode"
+            android:text="Send COde to Verify" />
 
         <TextView
             android:id="@+id/textView11"
@@ -42,9 +42,20 @@
             android:id="@+id/etCodePhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
             android:ems="10"
             android:hint="Enter Code"
             android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnResendCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:onClick="resendCode"
+            android:text="Resend COde" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -60,6 +71,7 @@
             android:id="@+id/btnFinish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="verifyCode"
             android:layout_marginLeft="150dp"
             android:text="Finish" />
     </LinearLayout>

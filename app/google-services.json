@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "177783427864-57fp01klj6uom5t8bkl9bgqequ4p8glh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sharefare.aliraza.com",
+            "certificate_hash": "b10c853b5f3440dd440fcf258fbeaa1c1f00081e"
+          }
+        },
+        {
           "client_id": "177783427864-qan6oin33lvcvhhlihhlpi0flnotu986.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

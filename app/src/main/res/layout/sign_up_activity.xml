@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="25dp"
-    android:layout_marginRight="25dp"
-    android:layout_marginTop="25dp"
     android:orientation="vertical"
     tools:context="sharefare.aliraza.com.SignUpActivity">
 
@@ -14,6 +11,9 @@
         android:id="@+id/etFirstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Enter First Name"
         android:inputType="textPersonName" />
@@ -22,14 +22,38 @@
         android:id="@+id/etLastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:ems="10"
         android:hint="Enter Last Name"
         android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPhone_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="number" />
+
+    <EditText
         android:id="@+id/etCNIC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:ems="10"
         android:hint="Enter 13-digit CNIC number"
         android:inputType="number" />
@@ -37,6 +61,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:text="Gender"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -44,7 +70,9 @@
     <RadioGroup
         android:id="@+id/rgGender"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
 
         <RadioButton
             android:id="@+id/rbMale"
@@ -67,30 +95,28 @@
         android:id="@+id/etDOB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:ems="10"
         android:hint="Enter Date of Birth"
-        android:inputType="date" />
+        android:inputType="phone" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:ems="10"
         android:hint="Enter Password"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/etReenterPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Re-Enter Password"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/etAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:ems="10"
         android:hint="Enter Address"
         android:inputType="textPostalAddress" />
@@ -99,7 +125,10 @@
         android:id="@+id/btnNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
+        android:background="#008080"
         android:text="Next" />
 
 </LinearLayout>

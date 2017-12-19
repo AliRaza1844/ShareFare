@@ -1,25 +1,33 @@
 package sharefare.aliraza.com;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+/**
+ * Created by Hina Ghafoor on 12/17/2017.
+ */
 
-public class Wallet extends Fragment {
+public class Wallet {
+    private static final Wallet wallet = new Wallet();
+    private float balance = 0;
+    private String paymentMethod = null;
 
-  @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.wallet, container,false);
+    public Wallet(){}
+
+    public float getBalance() {
+        return balance;
     }
 
-    @Override
-    public void onViewCreated(View view,  @Nullable Bundle savedInstanceState){
-        super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Wallet");
+    public static Wallet getWallet() {
+        return wallet;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setBalance(float balance) {
+        this.balance = balance;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
     }
 }

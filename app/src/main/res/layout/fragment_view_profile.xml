@@ -21,7 +21,7 @@
             android:src="@mipmap/ic_launcher" />
 
         <TextView
-            android:id="@+id/tnName"
+            android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -55,6 +55,15 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="15dp"
             android:text="Contact Number"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvAddressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Address"
             android:textSize="24sp" />
 
         <Button

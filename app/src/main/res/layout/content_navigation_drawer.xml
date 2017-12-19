@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="sharefare.aliraza.com.NavigationDrawer"
-    tools:showIn="@layout/app_bar_student_navigation_drawer">
+    tools:context="sharefare.aliraza.com.HomeActivity"
+    tools:showIn="@layout/app_bar_navigation_drawer">
 
     <TextView
         android:layout_width="wrap_content"

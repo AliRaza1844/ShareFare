@@ -1,8 +1,10 @@
 package sharefare.aliraza.com;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.SQLException;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,25 +15,18 @@ public class StartPageActivity extends AppCompatActivity {
 
     Button btnSignIn;
     Button btnSignUp;
-    public static final String MY_PREFS_NAME = "sharefare.aliraza.com.account";
+    public static final String MY_PREFS_NAME = "sharefare.aliraza.com.myprefs";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_page_activity);
 
-        // Populating the data base
-        this.populoateDatebase();
-
-
-
-        // If the user was already sign in just go to the Home page...
-        User user = User.getUser();
         SharedPreferences pref = getSharedPreferences(StartPageActivity.MY_PREFS_NAME,MODE_PRIVATE);
-        if(pref.getString("username",null) != null){
-            user.account.setUsername(pref.getString("username",null));
-            user.account.setPassword(pref.getString("password",null));
-            Intent intent = new Intent(StartPageActivity.this, NavigationDrawer.class);
+
+        if(pref.getString("sign_in","") == "true"){
+            Intent intent = new Intent(StartPageActivity.this, HomeActivity.class);
             startActivity(intent);
         }
 
@@ -64,35 +59,30 @@ public class StartPageActivity extends AppCompatActivity {
         finish();
     }
 
-    public void populoateDatebase(){
-        try {
-            // First populating the accounts database...
-            AccountsTable accounts = new AccountsTable(this);
-            accounts.open();
-            accounts.createEntry("aliraza","1234");
-            accounts.createEntry("adnan","1234");
-            accounts.createEntry("sameer","1234");
-            accounts.createEntry("fahad","1234");
-            accounts.createEntry("ali","1234");
-            accounts.close();
+    @Override
+    public void onBackPressed(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Exit Application?");
+        alertDialogBuilder
+                .setMessage("Click yes to exit!")
+                .setCancelable(false)
+                .setPositiveButton("Yes",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                moveTaskToBack(true);
+                                android.os.Process.killProcess(android.os.Process.myPid());
+                                System.exit(1);
+                            }
+                        })
 
-            // Now populating the profile database...
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
 
-        }catch (SQLException e){
-            Toast.makeText(StartPageActivity.this,e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
+                        dialog.cancel();
+                    }
+                });
 
-        try{
-            ProfileTable profile = new ProfileTable(this);
-            profile.open();
-            profile.createEntry("3410116155589", "ali", "raza", "1-6-1997", "20", "03048683771", "abcd", null);
-            profile.createEntry("3410116155588", "ali", "raza", "1-6-1997", "20", "03048683771", "abcd", null);
-            profile.createEntry("3410116155587", "ali", "raza", "1-6-1997", "20", "03048683771", "abcd", null);
-            profile.createEntry("3410116155586", "ali", "raza", "1-6-1997", "20", "03048683771", "abcd", null);
-            profile.createEntry("3410116155585", "ali", "raza", "1-6-1997", "20", "03048683771", "abcd", null);
-            profile.close();
-        }catch (SQLException e){
-            Toast.makeText(StartPageActivity.this,e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 }

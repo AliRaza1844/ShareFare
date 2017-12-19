@@ -26,14 +26,15 @@
             android:textSize="24sp" />
 
 
-        <EditText
-            android:id="@+id/editText7"
+        <TextView
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:ems="10"
-            android:hint="The “ShareFare” is an android and web application that helps people who travel in their private vehicles to share their vehicle and others will pay them. It’s an amazing way of sharing the travel and the fare among common people."
-            android:inputType="textMultiLine" />
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="50dp"
+            android:text="The “ShareFare” is an android and web application that helps people who travel in their private vehicles to share their vehicle and others will pay them. It’s an amazing way of sharing the travel and the fare among common people."
+            android:textSize="18sp" />
 
 
     </LinearLayout>

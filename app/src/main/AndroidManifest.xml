@@ -17,14 +17,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NavigationDrawer"
+            android:name=".HomeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SignInActivity" />
-        <activity android:name=".AddJourney" />
-        <activity android:name=".AddedJourney" />
-        <activity android:name=".SearchJourney" />
-        <activity android:name=".BookJourney" />
+        <activity android:name=".AddJourneyActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+
+        <activity android:name=".AddedJourney">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity android:name=".SearchJourney">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity android:name=".BookJourney">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
         <activity android:name=".ForgetPassword" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".EmailActivity" />

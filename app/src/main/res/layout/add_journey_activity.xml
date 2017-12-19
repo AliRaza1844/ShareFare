@@ -5,39 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background2"
-    tools:context=".AddJourney">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginTop="5dp"
-        android:gravity="center_horizontal"
-        android:text="Add Journey"
-        android:textSize="18sp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="Search Journey"
-        android:inputType="textPersonName" />
+    tools:context=".AddJourneyActivity">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="100dp"
+        android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="40dp"
         android:text="Add Pin Location"
         android:textSize="18sp" />
 
@@ -49,9 +28,10 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText14"
+            android:id="@+id/etPinLoaction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:ems="10"
@@ -60,7 +40,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/editText15"
+            android:id="@+id/etDestination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -75,47 +55,48 @@
     </LinearLayout>
 
 
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="100dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="TIme"
-            android:inputType="time" />
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
         android:layout_weight="0"
-        android:layout_marginTop="1dp"
         android:orientation="horizontal">
 
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Date"
-            android:inputType="date" />
+            android:inputType="number|date" />
 
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/etVehicle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Vehicle"
-            android:inputType="date" />
+            android:inputType="text" />
 
 
     </LinearLayout>
@@ -123,24 +104,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="1dp"
         android:layout_weight="0"
         android:orientation="horizontal">
 
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/etSeats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
             android:ems="10"
             android:hint="Available Seats"
-            android:inputType="textPersonName" />
+            android:inputType="date" />
 
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/etExpectedFare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -153,10 +137,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnsend"
+        android:id="@+id/btnAddJourney"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="1dp"
         android:background="#008080"

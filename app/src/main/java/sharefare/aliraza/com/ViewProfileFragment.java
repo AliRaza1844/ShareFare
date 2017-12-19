@@ -8,11 +8,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.TextView;
 
 
 public class ViewProfileFragment extends Fragment {
 
+    TextView name;
+    TextView age;
+    TextView phone;
+    TextView email;
 
     @Nullable
     @Override
@@ -26,6 +30,14 @@ public class ViewProfileFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("View Profile");
 
+        name = (TextView) view.findViewById(R.id.tvName);
+        age = (TextView) view.findViewById(R.id.tvAge);
+        phone = (TextView) view.findViewById(R.id.tvContact);
+        email = (TextView) view.findViewById(R.id.tvEmail);
+
+        name.setText(User.getUser().profile.getFirstName() + " " + User.getUser().profile.getLastName());
+        email.setText(User.getUser().account.getUsername());
+        phone.setText(User.getUser().profile.getPhoneNumber());
 
 
     }

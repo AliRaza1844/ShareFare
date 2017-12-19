@@ -17,12 +17,29 @@ public class UserProfile {
     private String cnic;
     private String address;
     private String phoneNumber;
-    private Bitmap image;
+    private String image;
     private int gender;
-    private Date dob;
-    private Date age;
+    private String dob;
+    private int age;
 
-    private UserProfile(){}
+    public UserProfile(){}
+
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
 
     public static UserProfile getProfile(){
         return profile;
@@ -60,19 +77,11 @@ public class UserProfile {
         return phoneNumber;
     }
 
-    public void setDob(String dob){
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        try {
-            //Parsing the String
-            this.dob = dateFormat.parse(dob);
-        } catch (ParseException e) {
-            System.out.println("Unable to parse " + dob);
-            e.printStackTrace();
-        }
+    public void setDob(String dob) {
+        this.dob = dob;
     }
 
-    public Date getDob(){
+    public String getDob() {
         return dob;
     }
 
